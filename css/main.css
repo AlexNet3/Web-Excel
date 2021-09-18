@@ -1,0 +1,416 @@
+body {
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar-thumb
+{
+    background-color: #989494;
+}
+
+#mainBlockCalcExcel {
+  width: 100%;
+  height: 98vh;
+  margin: 0px !important;
+  background-color: #f0f0f0;
+  border: 1px solid #a9a9a9;
+  -webkit-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.53);
+}
+
+#lineBackFormTableExcel {
+  height: fit-content;
+  width: 97%;
+  display: block;
+  margin-top: 4px;
+}
+
+#acceptEditFormTableExcel > div {
+  width: 24px;
+  height: 24px;
+  border: 1px solid transparent;
+  cursor: context-menu;
+  line-height: 24px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 900;
+  user-select: none;
+}
+
+#acceptEditFormTableExcel {
+  width: 52px;
+  height: 26px;
+  display: none;
+  float: right;
+  margin-top: -2px;
+}
+
+#acceptEditFormTableExcel > div:hover {
+  background-color: #00d0ff47;
+  border: 1px solid #74c8f9;
+}
+
+#cancelEditFormTableExcel {
+  color: red;
+}
+
+#yesEditFormTableExcel {
+  color: green;
+}
+
+#infoBackCellDataExcel {
+  height: 14px;
+  border: 1px solid #616161;
+  width: 82%;
+  margin-left: 8px;
+  margin-top: 6px;
+  box-shadow: 1px 1px 0px 0px rgba(69, 69, 69, 0.75) inset;
+  -webkit-box-shadow: 1px 1px 0px 0px rgba(69, 69, 69, 0.75) inset;
+  -moz-box-shadow: 1px 1px 0px 0px rgba(69, 69, 69, 0.75) inset;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  float: right;
+  margin-right: 7px;
+}
+
+#infoBackCellDataExcel:focus {
+  outline: none;
+}
+
+#mainContentExcel {
+  width: 99.4%;
+  height: 88vh;
+  display: -webkit-inline-box;
+  border: 1px solid;
+  margin-top: 3px;
+  border: 1px solid #616161;
+  box-shadow: 1px 1px 0px 0px rgba(69, 69, 69, 0.75) inset;
+  -webkit-box-shadow: 1px 1px 0px 0px rgba(69, 69, 69, 0.75) inset;
+  -moz-box-shadow: 1px 1px 0px 0px rgba(69, 69, 69, 0.75) inset;
+  margin-left: 1px;
+  background-color: #d8d8d8;
+}
+
+.listNumberExcel {
+  width: 30px;
+  height: fit-content;
+  background-color: #f0f0f0;
+}
+
+#cellsMain {
+  width: fit-content;
+  height: fit-content;
+  background-color: #d8d8d8;
+}
+
+.listGroupExcel {
+  width: fit-content;
+  height: 21px;
+  background-color: #f0f0f0;
+  display: flex;
+}
+
+#mainContentExcel::-webkit-scrollbar {
+  height: 9px;
+}
+
+.lineNr {
+  height: 21px;
+  text-align: center;
+  line-height: 21px;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.groupNr {
+  width: 80px;
+  height: 21px;
+  text-align: center;
+  line-height: 21px;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.cellExcel {
+  height: 17px;
+  width: auto;
+  text-align: center;
+  line-height: 21px;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: #fff;
+  padding: 2px;
+  overflow: hidden;
+  user-select: none;
+  white-space: break-spaces;
+}
+
+.groupCellExcel {
+  width: 81px;
+  height: fit-content;
+  float: left;
+}
+
+.listCels {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 1px;
+  display: flex;
+}
+
+.parentListCels {
+  width: 96.3vw;
+  height: 84.9vh;
+  overflow: auto;
+}
+
+.parentListCels::-webkit-scrollbar {
+  height: 11px;
+}
+
+.parentListGroupExcel {
+  width: calc(95.7vw - 9px);
+  height: 22px;
+  overflow: auto;
+  border-left: 1px solid #c1c1c1;
+  margin-left: -1px;
+  margin-top: 0px;
+  user-select: none;
+}
+
+.parentListGroupExcel::-webkit-scrollbar {
+  height: 0px;
+}
+
+.parentListNumberExcel {
+  height: calc(85.4vh - 6px);
+  width: 30px;
+  overflow: auto;
+  margin-top: 22px;
+  border-top: 1px solid #c1c1c1;
+  user-select: none;
+}
+
+.parentListNumberExcel::-webkit-scrollbar {
+  width: 0px;
+}
+
+.selectCellExcel {
+  border: 2px solid black;
+  padding: 0px;
+  padding-bottom: 1px;
+}
+
+.selectLineNr, .selectGroupNr {
+  background-color: #c3c3ff;
+}
+
+.selectCellExcel:focus {
+  outline: none;
+  text-align: left;
+}
+
+.txtCellExcel:focus {
+  outline: none;
+}
+
+.txtCellExcel {
+  user-select: none;
+  margin-top: -1px;
+  width: inherit;
+  height: inherit;
+  white-space: break-spaces;
+}
+
+.editCellExcel {
+  /*position: relative;*/
+  overflow: inherit;
+}
+
+.editTxtCellExcel {
+  position: absolute;
+  height: inherit;
+  margin-top: -1px;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  width: fit-content;
+  z-index: 2;
+}
+
+.resizeGroup {
+  float: right;
+  width: 2px;
+  height: inherit;
+  cursor: col-resize;
+}
+
+.resizeLine {
+  width: auto;
+  height: 6px;
+  cursor: row-resize;
+ /* color: red;*/
+  position: revert;
+  margin-top: -3px;
+  z-index: 1;
+}
+
+.shiftSelect_visual {
+  background-color: #0089ff29; 
+}
+
+#infoSummCellExcell{
+  width: fit-content;
+  display: flex;
+  float: right;
+  margin-right: 150px;
+  margin-top: -14px;
+  font-size: 13px;
+}
+
+#summ_infoSummCellExcell{
+  margin-left: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */
+/*//////////////////////////////////////////////////////////excell_page//////////////////////////////////////////////////////////*/
+
+#sendMailBox{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    z-index: 99999999999999999;
+}
+#sendTxtMailInfo{
+    width: 50%;
+    margin: auto;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 12%;
+    color: #b53a00;
+}
+
+#listEtap{
+    width: 49%;
+    float: right;
+}
+.loadEtapInEtapUser{
+    font-size: 12px;
+    background-color: #d2d2d2;
+}
+.loadEtapInEtapUser th {
+    padding: 4px;
+    text-align: center;
+}
+
+.loadEtapInEtapUser_body td {
+    padding: 4px;
+    border: 1px solid;
+    text-align: center;
+}
+.loadEtapInEtapUser_body a{
+    text-decoration: none;
+    color: #000;
+}
+.up_CellEtapList:hover {
+    color: green;
+}
+.down_CellEtapList:hover {
+    color: green;
+}
+.up_CellEtapList .down_CellEtapList{
+    width: fit-content;
+    height: fit-content;
+    display: block;
+}
+.title_FormAddITemToEtapUser{
+      width: 97.1%;
+      text-align: center;
+      font-size: 21px;
+      padding: 5px;
+      background-color: #d2d2d2;
+}
+#btn_FormAddITemToEtapUser{
+      display: inline;
+    margin-left: 20px;
+    padding: 4px;
+    font-size: 11px;
+    border: 1px solid;
+        user-select: none;
+    cursor: pointer;
+}
+#btn_FormAddITemToEtapUser:hover{
+  color: #fff;
+  background-color: #000;
+}
+#calcContentExcel{
+  width: 99.4%;
+  height: 88vh;
+  display: none;
+  border: 1px solid;
+  margin-top: 3px;
+  border: 1px solid #616161;
+  box-shadow: 1px 1px 0px 0px rgba(69, 69, 69, 0.75) inset;
+  -webkit-box-shadow: 1px 1px 0px 0px rgba(69, 69, 69, 0.75) inset;
+  -moz-box-shadow: 1px 1px 0px 0px rgba(69, 69, 69, 0.75) inset;
+  margin-left: 1px;
+  background-color: #d8d8d8;
+}
+#controlPage{
+    display: flex;
+    margin-left: 29px;
+}
+.btnSelectTabExcel{
+    width: 50px;
+    text-align: center;
+    height: 30px;
+    border-top: none;
+    line-height: 25px;
+    cursor: pointer;
+}
+.activeTabExcel{
+    border: 1px solid;
+}
+.inactiveTabExcel{
+    border: 1px solid gray;
+    background-color: gray;
+}
+.btnSelectTabExcel:hover{
+    background-color: #fff;
+}
+.listExcelCell{
+  width: inherit;
+    text-align: left;
+    height: 179px;
+    overflow: auto;
+}
+.listExcelCell::-webkit-scrollbar {
+    display: block;
+    width: 9px;
+    height: 9px;
+}
+.listExcelCell:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px !important;
+}
+.colored{
+  background-color: yellow;
+}
+.slectListExcel{
+/*    width: 100%;*/
+    overflow: hidden;
+/*    float: left;*/
+/*    white-space: nowrap;*/
+   /* margin-top: -1px;*/
+
+}
+.selectListBtnExcel{
+    float: right;
+    padding: 0px;
+    padding-top: 2px;
+    margin-top: -16px;
+    margin-left: -14px;
+    z-index: 3;
+    position: relative;
+}

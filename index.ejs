@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Web Excel</title>
+    <script defer="" src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/scriptExcel.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+  <body style="overflow: hidden">
+    <div id="mainBlockCalcExcel" style="font-family: 'Arial', sans-serif;font-size: 13px;">
+        <input id="infoBackCellDataExcel" contenteditable="true"/>
+        <div id="lineBackFormTableExcel">
+            <div id="acceptEditFormTableExcel">
+                <div id="cancelEditFormTableExcel">✖</div>
+                <div id="yesEditFormTableExcel">✔</div>
+            </div>
+        </div>
+        <div id="mainContentExcel">
+            
+            <div class="parentListNumberExcel">
+                <div class="listNumberExcel"></div>
+            </div>
+            <div id="cellsMain">
+                <div class="parentListGroupExcel">
+                    <div class="listGroupExcel"></div>
+                </div>
+                <div class="parentListCels">
+                    <div class="listCels"></div>
+                </div>
+            </div>
+        </div>
+        <div id="calcContentExcel">
+            
+            <div class="parentListNumberExcel">
+                <div class="listNumberExcel"></div>
+            </div>
+            <div id="cellsCalc">
+                <div class="parentListGroupExcel">
+                    <div class="listGroupExcel"></div>
+                </div>
+                <div class="parentListCels">
+                    <div class="listCels"></div>
+                </div>
+            </div>
+        </div>
+        <div id="controlPage">
+            <div class="btnSelectTabExcel activeTabExcel" cell="main">main</div>
+            <div class="btnSelectTabExcel inactiveTabExcel" cell="calc">calc</div>
+        </div>
+        <div id="infoSummCellExcell">
+            <div id="txt_infoSummCellExcell">Sum = </div>
+            <div id="summ_infoSummCellExcell">0</div>
+        </div>
+    </div>
+  </body>
+</html>
